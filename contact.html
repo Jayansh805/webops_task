@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/dee01b1aa9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class="navbar" id="section1">
+        <div class="vertical_line">
+        </div>
+        <div class="sq_and_text" onclick="change('mainid'); change_color('opt1')">
+            <div class="square"></div>
+            <div class="text"><b class="name">Jayansh Khandelwal</b> 
+                <br class="shortscreen_linebreak"><b class="bigscreen_linebreak">| </b>IIT GUWAHATI
+            </div>
+        </div>
+        <div class="buttons" style="justify-content: end;">
+            <a href="index.html"><button class="tabs">BACK TO HOME</button></a>
+            <a href="index.html" style="text-decoration: none;"><i style="padding-right: 10px; font-size: 18px;" class="fa fa-arrow-circle-left" id="back2home" aria-hidden="true"></i></a>
+        </div>  
+    </div>
+
+    <div id="scrollbtn" class="scrollup">
+        <a style="color:blue;" href="#section1"><i class="fa-solid fa-circle-chevron-up"></i></a>
+    </div>
+
+
+    <div class="contact_page" id="contact_pageid">
+
+        <div class="contact_card">
+            <div class="contact_left">
+                <img src="./contact_template.jpg" alt="CONTACT US" id="contact_template">
+
+                <div class="contact_left_bottom">
+                    Feel free to reach us out!<br class="bigscreen_linebreak"><br class="bigscreen_linebreak">
+                </div>
+            </div>
+            <div class="contact_right">
+                <form id="contact_form" onsubmit="return validation()">
+                    <label for="name">NAME</label><br>
+                    <input type="text" id="name" name="name" placeholder="Your Good Name" required>
+                    <span class="err_box" id="span1"></span>
+                    <br>
+                    <label for="emailid">EMAIL ID</label><br>
+                    <input type="text" id="emailid" name="emailid" placeholder="Your Email Id" required>
+                    <span class="err_box" id="span3"></span>
+                    <br>
+                    <label for="msg">QUERRY</label><br>
+                    <input type="textarea" id="msg" name="msg" placeholder="Drop your message here..." required>
+                    <br>
+                    <input type="submit" id="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="bottom">
+        <div class="bottom_left">@ IIT GUWAHATI</div>
+        <div class="bottom_right">
+            <div class="block" id="one"><div style="font-weight: bold;">Call</div><div>+91 8279234990</div></div>
+            <div class="block" id="two"><div style="font-weight: bold;">Email ID</div><div> jdgupta1980@gmail.com</div></div>
+            <div class="block" id="three">
+                <div style="font-weight: bold;">Follow </div>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
