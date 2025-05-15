@@ -107,7 +107,13 @@ function validation(){
                 return false;
             }
             else{
-                document.getElementById('span3').innerHTML="";
+                if(email.indexOf('@')==0 || email.indexOf('.')==email.length-1){
+                    document.getElementById('span3').innerHTML="**Please enter your correct email id";
+                    return false;
+                }
+                else{
+                    document.getElementById('span3').innerHTML="";
+                }
             }
         }
     }
